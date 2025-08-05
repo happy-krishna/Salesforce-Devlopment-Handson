@@ -12,7 +12,7 @@ public class SOQL2 {
         /* we use contact sObject it will throw this error - Loop variable must be a generic SObject or 
            List or a concrete SObject or List of: AggregateResult */
         for(AggregateResult con : [Select Account.Name, COUNT(Id) contactCount, Sum(Profit__c) totalProfit  From Contact 
-                           where Profit__c > 0 Group by Account.Name Having Sum(Profit__c) > 10 ]){
+                           where Profit__c > 0 Group by Account.Name Having Sum(Profit__c) > 10000]){
            System.debug(con);                              
         }
     }
