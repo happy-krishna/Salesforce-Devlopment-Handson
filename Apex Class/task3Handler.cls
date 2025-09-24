@@ -6,6 +6,8 @@
     2. Create a contact with LastName as Case.Subject with same related account 
          if no such contact exist for that Account.
 
+    Apex Trigger Name : caseTrigger
+
 **/
 
 public class task3Handler {

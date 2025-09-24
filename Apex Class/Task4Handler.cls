@@ -3,6 +3,8 @@
 
     1. Automatically create number of contact Records based on Total_Number_of_Contacts__c field on account, when account record is created.
     2. make sure create contact records have unique last name.
+
+    Apex Trigger Name : accountTrigger
  
 **/
 public class Task4Handler {
